@@ -1,0 +1,17 @@
+﻿@page
+
+<div class="text-center">
+    <h6 class="display-6">Tanks</h6>
+    <p>Tanks for placing order #@OrderId</p>
+    <p>We'll ship your goods as soon as possible</p>
+    <a class="btn btn-primary" asp-asp-controller="Home" asp-action="Index">
+        Return to Store
+    </a>
+
+</div>
+
+
+@functions{
+    [BindProperty(SupportsGet =true)]
+    public String? OrderId { get; set; }
+}
